@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CA5351: No usar algoritmos criptográficos dañados
+dotnet_diagnostic.CA5351.severity = none
