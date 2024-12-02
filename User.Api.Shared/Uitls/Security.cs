@@ -36,6 +36,8 @@ namespace User.Api.Shared.Uitls
             //Create Token
             var jwtConfig = new JwtSecurityToken(
                 claims: userClaims,
+                issuer: "https://id.nickapsas.com",
+                audience: "http://user.nickpasas.com",
                 expires: DateTime.UtcNow.AddHours(1),
                 signingCredentials: credentials
             );
